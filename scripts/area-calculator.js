@@ -7,8 +7,9 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
     return;
   }
   const area = (0.5 * triangleBaseValue * triangleHeightValue).toFixed(2);
-
   setTextArea("triangle-area", area);
+
+  addToCalculationEntry("Triangle", area);
 });
 
 // Rectangle Area
@@ -21,6 +22,7 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   }
   const area = (rectangleWidth * rectangleLength).toFixed(2);
   setTextArea("rectangle-area", area);
+  addToCalculationEntry("Rectangle", area);
 });
 
 // Parallelogram
@@ -36,6 +38,7 @@ document
     }
     const area = (parallelogramBase * parallelogramHeight).toFixed(2);
     setTextArea("parallelogram-area", area);
+    addToCalculationEntry("Parallelogram", area);
   });
 // Rhombus
 
@@ -48,6 +51,7 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
   }
   const area = (0.5 * rhombusD1 * rhombusD2).toFixed(2);
   setTextArea("rhombus-area", area);
+  addToCalculationEntry("Rhombus", area);
 });
 
 // Pentagon
@@ -61,6 +65,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
   }
   const area = (0.5 * pentagonP * pentagonA).toFixed(2);
   setTextArea("pentagon-area", area);
+  addToCalculationEntry("Pentagon", area);
 });
 
 // Ellipse
@@ -74,4 +79,5 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   }
   const area = (3.1416 * ellipseA * ellipseB).toFixed(2);
   setTextArea("ellipse-area", area);
+  addToCalculationEntry("Ellipse", area);
 });
